@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tienda de Ropa</title>
+
+<!-- NUEVA FUENTE BONITA -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family: 'Poppins', sans-serif; /* 👈 aquí cambió la letra */
+margin:0;
+background:#e0ecff; /* 👈 fondo azul claro */
+}
+
+/* ENCABEZADO */
+header{
+background:#1e3a8a; /* azul fuerte */
+color:white;
+text-align:center;
+padding:30px;
+}
+
+/* CONTENEDOR */
+.productos{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding:40px;
+}
+
+/* TARJETAS */
+.tarjeta{
+background:white;
+width:220px;
+border-radius:15px;
+box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+padding:15px;
+transition:0.3s;
+}
+
+.tarjeta:hover{
+transform:translateY(-8px);
+}
+
+/* IMAGEN */
+.tarjeta img{
+width:100%;
+border-radius:10px;
+}
+
+/* NOMBRE */
+.tarjeta h3{
+margin:10px 0;
+}
+
+/* PRECIO */
+.precio{
+color:#1e3a8a; /* azul */
+font-size:18px;
+font-weight:bold;
+}
+
+/* BOTÓN */
+button{
+margin-top:10px;
+background:#2563eb; /* azul */
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:20px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1e40af;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Ropa de caballero</h1>
+<p>Moda bonita y moderna</p>
+</header>
+
+<div class="productos">
+
+<div class="tarjeta">
+<img src=https://ss223.liverpool.com.mx/xl/1181274553.jpg>
+<h3>playera casual</h3>
+<p class="precio">$250 MXN</p>
+<button>Comprar</button>
+</div>
+
+<div class="tarjeta">
+<img src=https://ss223.liverpool.com.mx/xl/1189335578.jpg>
+<h3>Playera Elegante</h3>
+<p class="precio">$400 MXN</p>
+<button>Comprar</button>
+</div>
+
+<div class="tarjeta">
+<img src=https://ss223.liverpool.com.mx/xl/1173923313.jpg>
+<h3>Pantalón moderno</h3>
+<p class="precio">$400 MXN</p>
+<button>Comprar</button>
+</div>
+
+<div class="tarjeta">
+<img src=https://ss223.liverpool.com.mx/xl/1166547527.jpg>
+<h3>Short casual</h3>
+<p class="precio">$220 MXN</p>
+<button>Comprar</button>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html> <!-- Indica que es un documento HTML5 -->
+<html lang="es"> <!-- Idioma de la página -->
+
+<head>
+<meta charset="UTF-8"> <!-- Permite acentos -->
+<title>AURA</title> <!-- Nombre en la pestaña -->
+
+<style>
+
+/* ===== CONFIGURACIÓN GENERAL ===== */
+html{
+    scroll-behavior: smooth; /* Movimiento suave al hacer clic */
+}
+
+body{
+    margin: 0;
+    font-family: Segoe UI Semibold; /* Tipografia */
+}
+
+/* ===== PORTADA ===== */
+header{
+    background-image: url("https://yt3.googleusercontent.com/t2hPdLNESBDZidUWa-uBsc5YS6a2-tXOeWSkgkPtwwSxCxAaC4l1eGxCRBYNtkOBxtzv0DB3qSE=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"); /* Imagen principal */
+    background-size: cover;
+    background-position: center;
+    height: 250px; /* Altura grande */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header h1{
+    font-size: 50px;
+    background: rgba(0,0,0,0.4); /* Fondo oscuro transparente */
+    padding: 10px;
+}
+
+/* ===== MENÚ ===== */
+nav{
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    position: sticky; /* Menú fijo */
+    top: 0;
+}
+
+/* Links del menú */
+nav a{
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Efecto hover */
+nav a:hover{
+    color: gray;
+}
+
+/* ===== SECCIONES ===== */
+section{
+    padding: 40px;
+}
+
+.texto{
+    width: 50%;
+}
+
+.imagen img{
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* ===== PRODUCTOS ===== */
+.productos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Tarjeta */
+.card{
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Animación */
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    width: 100%;
+}
+
+/* ===== VIDEO ===== */
+.video{
+    text-align: center;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: gray;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== AUDIO ===== -->
+<section id="AUDIO">
+
+    <!-- AUDIO LOCAL -->
+    <div class="AUDIO">
+        <audio src="Harry Styles - Golden (Official Audio).mp3" controls , width="1000"></audio>
+            <!-- Es el audio -->
+    </div>
+
+<!-- ===== PORTADA ===== -->
+<header>
+    <h1>AURA</h1> <!-- Nombre de la tienda -->
+</header>
+
+<!-- ===== MENÚ ===== -->
+<nav>
+    <!-- Cada enlace lleva a una sección -->
+    <a href="#inicio">Inicio</a>
+    <a href="file:///C:/Users/Brayan/OneDrive/Pictures/Documents/PROYECTO%20DE%20PAGINA%20WEB/Ropa%20de%20caballero.html">Hombre</a>
+    <a href="file:///C:/Users/Brayan/OneDrive/Pictures/Documents/PROYECTO%20DE%20PAGINA%20WEB/ropa%20de%20dama.html">Mujer</a>
+    <a href="#video">Video</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+
+<!-- ===== INICIO ===== -->
+<section id="inicio">
+    <h2>Bienvenido a AURA</h2>
+    <p>Moda elegante, minimalista y moderna.</p>
+    <p>Descubre una coleccion diseñada para</p>
+    <p>quienes proyectan su propia luz.Moda que</p>
+    <p>trasciende la tendencia,definida por la</p>
+    <p>silueta y el detalle.</p>
+</section>
+
+<!-- ===== HOMBRE ===== -->
+<section id="hombre">
+    <h2>Ropa de Hombre</h2>
+
+    <div class="productos">
+
+        <div class="card">
+            <img src="C:\Users\Brayan\OneDrive\Pictures\Documents\PROYECTO DE PAGINA WEB\Chaqueta.jpeg">
+            <p>Chaqueta</p>
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\Brayan\OneDrive\Pictures\Documents\PROYECTO DE PAGINA WEB\Camisa.jpeg">
+            <p>Camisa</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== MUJER ===== -->
+<section id="mujer">
+    <h2>Ropa de Mujer</h2>
+
+    <div class="productos">
+
+        <div class="card">
+            <img src="C:\Users\Brayan\OneDrive\Pictures\Documents\PROYECTO DE PAGINA WEB\Vestido.jpeg">
+            <p>Vestido</p>
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\Brayan\OneDrive\Pictures\Documents\PROYECTO DE PAGINA WEB\Blusa.jpeg">
+            <p>Blusa</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ===== VIDEO ===== -->
+<section id="video">
+    <h2>Conoce AURA</h2>
+
+    <!-- VIDEO LOCAL -->
+    <div class="video">
+        <video src="Video Project 1.mp4" controls , width="1000"></video>
+            <!-- Es el video -->
+    </div>
+
+    <!-- EXPLICACIÓN:
+         <video> sirve para mostrar un video
+         controls = botones de play, pausa, volumen
+         src = ruta del archivo -->
+</section>
+
+<h2 style="text-align:center;">Formulario:</h2>
+<h2 style="text-align:center;">Compra tu ropa</h2>
+
+<!-- FORMULARIO -->
+    <form style="width: 250px; margin: auto; border: 1px solid #ccc; padding: 15px; border-radius: 10px;">
+        
+        Nombre:<br>
+        <input type="text"><br><br>
+
+        Correo:<br>
+        <input type="email"><br><br>
+
+        Prenda:<br>
+        <select>
+            <option>Camisa</option>
+            <option>Pantalón</option>
+        </select><br><br>
+
+        Talla:<br>
+        <select>
+            <option>Chica</option>
+            <option>Mediana</option>
+            <option>Grande</option>
+        </select><br><br>
+
+        <button style="width:100%;">Enviar</button>
+
+    </form>
+
+<!-- ===== CONTACTO ===== -->
+<section id="contacto">
+    <h2>Contacto</h2>
+
+    <!-- Redes sociales -->
+    <p>Redes Sociales:</p>
+
+    <!-- IMPORTANTE:
+         href = enlace real
+         target="_blank" abre en otra pestaña -->
+    <a href="https://www.instagram.com/brayanemmanuel_?igsh=MXZkaGpxODE3cHo3aQ==" target="_blank">
+        Instagram
+    </a>
+
+    |
+    <a href="https://www.facebook.com/share/186uUrgg1g/" target="_blank">
+        Facebook
+    </a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2026 AURA</p>
+</footer>
+
+</body>
+</html>
